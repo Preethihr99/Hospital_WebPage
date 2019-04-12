@@ -1,0 +1,122 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Torrance Hospital </title>
+	
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<div class="logo">
+		
+			<table>
+				<tr>
+					
+					<td align="center" width="600px" style="font-size:50px;font-family:forte;"><img src="img/hosplogo1.jpg" style="width:120px;height:120px;">
+					<font color="#428bca"> TORRANCE </font><font color="#000"> Memorial Medical Center</font> </td>
+					
+				</tr>
+			</table>
+	</div>
+		
+
+	<ul>
+		<li><a href="torrance.html">HOME</a>
+		<ul> 
+		<li><a href="login.html">Make an appointment<br/>(Login)</a></li>
+		<li><a href="video.html"> Treatment Procedure/<br/>Treatment Videos</a></li>
+		</ul>
+		</li>
+		<li><a href="">PATIENT CARE</a>
+		<ul>
+			<li><a href="tst.html">Online Consult</a></li>
+			<li><a>Patient Messages</a></li>
+			<li><a>Health and LifeStyle</a></li>
+		</ul></li>
+		<li><a href="about.html">ABOUT US</a> </li> 
+		<li><a href="heart.html">EXCELLENCE IN</a>
+		<ul>
+			<li><a href="heart.html">Heart</a></li>
+			<li><a href="spine.html">Spine</a></li>
+			<li><a href="cancer.html">Cancer</a></li>
+		</ul></li>
+		<li><a href="service.html">SERVICE</a></li>
+		<li><a href="doctor.html">DOCTORS</a> </li>
+		<li><a href="contact.html">CONTACT US</a>
+		<ul>
+			<li><a href="location.html">Locations</a></li>
+			<li><a href="map.html">Map</a></li>
+		</ul></li>
+		<li><a href="reasearch.html">RESEARCH</a>
+		<ul>
+	    <li><a href="medicalcourses.html">Medical Courses</a></li>
+		<li ><a href="whatsnew.html"> What's New</a></li>
+		</li></ul>
+	</ul>
+					
+		<div class="slider">
+			<div id="img">
+				<img src="img/torrance.jpg">
+			</div>
+		</div>
+		
+		<script>
+		
+		
+			var img = document.getElementById('img');
+			
+			var images = ['img/torrance.jpg', 'img/hosp4.jpg', 'img/01.jpg', 'img/a.jpg', 'img/about.jpg', 'img/hosp2.jpg'];
+			var x = 0;
+			function slide(){
+				if(x<images.length)
+				{
+					x=x+1;
+				}
+				else
+				{
+				x=1;
+				}
+				img.innerHTML = "<img src="+images[x-1]+">";
+			}
+			
+			setInterval(slide, 2000);
+					
+		</script>
+		
+		<style>
+			.slider{
+					width: 90%;
+					height: 550px;
+					box-sizing: border-box;
+					box-shadow: 5px 5px 10px grey;
+					margin: 60px auto;
+					
+				}
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		
+		</style>
+			<div class="slide slide1">
+				<div class="caption">
+				<br/>
+					<u><h2 style="text-align:center"><font color="#800080" size="20px"> Welcome to Torrance Memorial Medical Center</font><h2></u>
+					<p style="text-align: center; font-family: Comic Sans MS"><font size="6px" color="#000080"> World of Care </font></p><br/>
+					<p style="text-align: center; font-family: Arial"><font color="#FF00FF"> Best Meidcal and Healthcare need to our Patients</font></p>
+					<p style="text-align: center; font-family: Arial"><font color="#FF00FF"> Our team of over 5000 doctors, they join me in giving you the best 
+					of modern healthcare to ensure you stay healthy, always.</font></p>
+					<br/><br/>
+					<p style="text-align: center; font-family: Cursive"><font size="10px" color="#CD5C5C"> >Thank You For Your Trust </font></p>
+					<br/><br/><br/>
+					<div class="bottom">
+		 Contact Us +91 96366 20000  | torranceh@hospital.com | torrance1234@gmail.com
+		</div>
+				</div>
+			</div>
+			
+		
+
+</body>
+</html>
+			
+	
